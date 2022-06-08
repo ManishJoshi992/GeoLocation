@@ -1,0 +1,32 @@
+server:
+  port: 8081
+
+database:
+
+  driverClass: com.mysql.jdbc.Driver
+  
+  user: root
+  
+  password: root
+  
+  url: jdbc:mysql://localhost:3306/GeoLocation
+  
+  maxWaitForConnection: 1s
+  
+  minSize: 8
+  
+  maxSize: 32
+  
+  checkConnectionWhileIdle: false
+  
+  properties:
+  
+    charSet: UTF-8
+    hibernate.dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+    
+    hibernate.show_sql: true
+    
+    hibernate.hbm2ddl.auto: update
+
+    
+
